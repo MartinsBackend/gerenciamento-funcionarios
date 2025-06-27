@@ -1,10 +1,10 @@
 package com.rafael.gerenciamentofuncionarios.model;
 
 public class Funcionario {
-    protected String nome;
-    protected int id;
-    protected double salario;
-    protected String cargo;
+    private String nome;
+    private int id;
+    private double salario;
+    private String cargo;
 
     public Funcionario(String nome, int id, double salario, String cargo) {
         this.nome = nome;
