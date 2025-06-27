@@ -44,4 +44,11 @@ public class Funcionario {
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }
+
+    public void Informacoes (){
+        System.out.println("Nome:  " + nome);
+        System.out.println("Id:  " + id);
+        System.out.println("Salário:  " + salario);
+        System.out.println("Cargo:  " + cargo);
+    }
 }
