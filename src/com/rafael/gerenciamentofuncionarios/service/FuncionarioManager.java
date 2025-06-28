@@ -28,5 +28,15 @@ public class FuncionarioManager {
         }
         return null;
     }
+
+    public void listagemFuncionarios() {
+        if (funcionarios.isEmpty()) {
+            System.out.println("Lista de cadastro vazia");
+            return;
+        }
+        for (Funcionario f : funcionarios) {
+            f.informacoes();
+        }
+    }
 }
 
