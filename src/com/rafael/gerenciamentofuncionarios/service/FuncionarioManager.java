@@ -11,5 +11,22 @@ public class FuncionarioManager {
     public void adicionarFuncionario(Funcionario funcionario) {
         funcionarios.add(funcionario);
     }
+
+    public Funcionario buscarFuncionarioId(int id) {
+        for (Funcionario f : funcionarios) {
+            if (f.getId() == id)
+                return f;
+        }
+        return null;
+    }
+
+    public List<Funcionario> buscarFuncionarioNome(String nome) {
+        List<Funcionario> nomeEncontrado = new ArrayList<>();
+        for (Funcionario f : funcionarios) {
+            if (f.getNome().toLowerCase().contains(nome.toLowerCase()))
+                return nomeEncontrado;
+        }
+        return null;
+    }
 }
 

@@ -18,9 +18,8 @@ public class Temporario extends Funcionario{
         this.contrato = contrato;
     }
     @Override
-    public void Informacoes(){
-        super.Informacoes();
+    public void informacoes(){
+        super.informacoes();
         System.out.println("Tempo de Contrato:  " + contrato);
-
     }
 }

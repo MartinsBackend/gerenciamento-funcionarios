@@ -45,7 +45,7 @@ public class Funcionario {
         this.cargo = cargo;
     }
 
-    public void Informacoes (){
+    public void informacoes (){
         System.out.println("Nome:  " + nome);
         System.out.println("Id:  " + id);
         System.out.println("Salário:  " + salario);
