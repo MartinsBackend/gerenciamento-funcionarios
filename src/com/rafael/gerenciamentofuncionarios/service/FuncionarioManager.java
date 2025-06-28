@@ -19,19 +19,18 @@ public class FuncionarioManager {
         }
         return null;
     }
-
     public List<Funcionario> buscarFuncionarioNome(String nome) {
         List<Funcionario> nomeEncontrado = new ArrayList<>();
         for (Funcionario f : funcionarios) {
-            if (f.getNome().toLowerCase().contains(nome.toLowerCase()))
-                return nomeEncontrado;
+            if (f.getNome().toLowerCase().contains(nome.toLowerCase())) {
+                nomeEncontrado.add(f);
+            }
         }
-        return null;
+        return nomeEncontrado;
     }
-
     public void listagemFuncionarios() {
         if (funcionarios.isEmpty()) {
-            System.out.println("Lista de cadastro vazia");
+            System.out.println("Lista de funcinários está vazia");
             return;
         }
         for (Funcionario f : funcionarios) {
